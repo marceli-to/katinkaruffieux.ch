@@ -1,0 +1,65 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: agenda_date
+            field:
+              time_enabled: true
+              type: date
+              display: Datum
+              width: 50
+          -
+            handle: title
+            field:
+              type: textarea
+              required: true
+              display: Titel
+              validate:
+                - required
+          -
+            handle: text
+            field:
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - removeformat
+                - anchor
+              remove_empty_nodes: true
+              link_collections:
+                - pages
+              container: assets
+              type: bard
+              display: Text
+          -
+            handle: link
+            field:
+              collections:
+                - pages
+              container: assets
+              type: link
+              display: Link
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - agenda
+              max_items: 1
+              listable: false
+              localizable: true
+title: Agenda

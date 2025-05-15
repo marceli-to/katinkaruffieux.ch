@@ -1,0 +1,25 @@
+
+<section class="w-full" id="{{ anchor }}">
+
+  <div class="sticky top-60 md:top-80 h-40 md:h-60 flex flex-col justify-center border-b border-b-black w-full z-10 bg-pale">
+    {{ partial:components/headings/h2 }}
+      {{ title }}
+    {{ /partial:components/headings/h2 }}
+  </div>
+
+  {{ partial:layout/inner }}
+
+    {{ content }}
+
+      {{ if type == 'contacts' }}
+        {{ partial:components/contacts }}
+      {{ /if }}
+
+      {{ if type == 'animation' }}
+        {{ partial:components/animation }}
+      {{ /if }}
+    
+    {{ /content }}
+
+  {{ /partial:layout/inner }}
+</section>

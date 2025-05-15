@@ -1,0 +1,35 @@
+title: Sektion
+fields:
+  -
+    handle: anchor
+    field:
+      type: text
+      display: Anchor
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: content
+    field:
+      type: replicator
+      display: Inhalt
+      sets:
+        neue_setgruppe:
+          display: 'Neue Setgruppe'
+          sets:
+            contacts:
+              display: Kontakte
+              instructions: 'Kontakte hinzufügen'
+              icon: form-address-field
+              fields:
+                -
+                  import: contacts
+            agenda:
+              display: Agenda
+              instructions: 'Agenda hinzufügen'
+              icon: calendar-date
+              fields:
+                -
+                  import: agenda

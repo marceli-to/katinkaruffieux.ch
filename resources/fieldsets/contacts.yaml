@@ -1,0 +1,33 @@
+title: Kontakte
+fields:
+  -
+    handle: contact
+    field:
+      type: replicator
+      display: Kontakt
+      sets:
+        neue_setgruppe:
+          display: 'Neue Setgruppe'
+          sets:
+            contact:
+              display: Kontakt
+              instructions: 'Kontakt hinzufügen'
+              icon: form-address-field
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Titel
+                -
+                  handle: text
+                  field:
+                    buttons:
+                      - h3
+                      - bold
+                      - italic
+                      - removeformat
+                      - anchor
+                    remove_empty_nodes: true
+                    type: bard
+                    display: Text

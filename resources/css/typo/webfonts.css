@@ -1,0 +1,25 @@
+/**
+ * Typography - Webfonts
+ * -----------------------------------------------------------------------------
+ */
+
+@font-face {
+  font-family: 'Inter-Italic';
+  src: url('fonts/Inter-Italic.woff2') format('woff2'), url('fonts/Inter-Italic.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('fonts/Inter-Regular.woff2') format('woff2'), url('fonts/Inter-Regular.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RecklessNeue-Light';
+  src: url('fonts/RecklessNeue-Light.woff2') format('woff2'), url('fonts/RecklessNeue-Light.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}

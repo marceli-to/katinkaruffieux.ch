@@ -1,0 +1,7 @@
+title: Animation
+fields:
+  -
+    handle: code
+    field:
+      type: textarea
+      display: Code

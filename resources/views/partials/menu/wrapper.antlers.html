@@ -1,0 +1,19 @@
+<div 
+  class=""
+  x-cloak 
+  x-show="menu"
+  x-transition:enter="transition ease-out duration-240"
+  x-transition:enter-start="opacity-0"
+  x-transition:enter-end="opacity-100"
+  x-transition:leave="transition ease-in duration-240"
+  x-transition:leave-start="opacity-100"
+  x-transition:leave-end="opacity-0"
+  x-init="window.addEventListener('scroll', () => {  if (menu) {  menu = false; } });">
+  <nav>
+    <ul>
+      {{ nav:main }}
+        {{ partial:menu/item }}
+      {{ /nav:main }}
+    </ul>
+  </nav>
+</div>

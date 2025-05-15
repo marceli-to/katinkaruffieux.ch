@@ -1,0 +1,11 @@
+<li>
+  <a 
+    href="/{{ url }}" 
+    class="{{ is_current || is_parent ? '' : '' }}"
+    target="{{ is_external ? '_blank' : '_self' }}"
+    title="{{ title }}"
+    @click="menu = false">
+    {{ title }}
+  </a>
+</li>
+

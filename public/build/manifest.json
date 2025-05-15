@@ -1,0 +1,36 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-3ee0016c.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/css/fonts/Inter-Italic.woff": {
+    "file": "assets/Inter-Italic-c3183479.woff",
+    "src": "resources/css/fonts/Inter-Italic.woff"
+  },
+  "resources/css/fonts/Inter-Italic.woff2": {
+    "file": "assets/Inter-Italic-2d078cb3.woff2",
+    "src": "resources/css/fonts/Inter-Italic.woff2"
+  },
+  "resources/css/fonts/Inter-Regular.woff": {
+    "file": "assets/Inter-Regular-7cb53332.woff",
+    "src": "resources/css/fonts/Inter-Regular.woff"
+  },
+  "resources/css/fonts/Inter-Regular.woff2": {
+    "file": "assets/Inter-Regular-e06f6b1b.woff2",
+    "src": "resources/css/fonts/Inter-Regular.woff2"
+  },
+  "resources/css/fonts/RecklessNeue-Light.woff": {
+    "file": "assets/RecklessNeue-Light-247b7734.woff",
+    "src": "resources/css/fonts/RecklessNeue-Light.woff"
+  },
+  "resources/css/fonts/RecklessNeue-Light.woff2": {
+    "file": "assets/RecklessNeue-Light-717f1ef9.woff2",
+    "src": "resources/css/fonts/RecklessNeue-Light.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-350ff511.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}

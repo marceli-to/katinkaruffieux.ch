@@ -1,0 +1,42 @@
+<footer class="border-t border-t-black">
+  {{ partial:layout/inner class="py-25 lg:py-30" }}
+  <div class="lg:grid lg:grid-cols-6">
+    <p class="lg:col-span-2">
+      Katinka Ruffieux<br>
+      <a 
+        href="mailto:kontakt@katinka.ruffieux.ch"
+        class="underline underline-offset-4 decoration-1 hover:no-underline">
+        kontakt@katinka.ruffieux.ch
+      </a>
+    </p>
+    <p class="lg:col-span-2">
+      Fotografie: 
+      <a 
+        href="https://google.com" 
+        title="Fotografie: XXX XXXX" 
+        class="underline underline-offset-4 decoration-1 hover:no-underline">
+        XXX XXXX
+      </a><br>
+      Design: 
+      <a 
+        href="https://google.com" 
+        title="Design: Emma Leuthold" 
+        class="underline underline-offset-4 decoration-1 hover:no-underline">
+        Emma Leuthold
+      </a><br>
+      Code: 
+      <a 
+        href="https://marceli.to" 
+        title="Code: marceli.to" 
+        class="underline underline-offset-4 decoration-1 hover:no-underline">
+        Marcel Stadelmann
+      </a>
+    </p>
+    <p class="lg:col-span-2">
+      © 2025 Katinka Ruffieux
+    </p>
+  </div>
+  {{ /partial:layout/inner }}
+</footer>
+{{ vite src="resources/js/app.js" }}
+{{ livewire:scripts }}
