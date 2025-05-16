@@ -47,3 +47,10 @@ fields:
               fields:
                 -
                   import: portrait
+            office:
+              display: Textbüro
+              instructions: 'Textbüro Inhalte hinzufügen'
+              icon: text-formatting-markdown
+              fields:
+                -
+                  import: office
