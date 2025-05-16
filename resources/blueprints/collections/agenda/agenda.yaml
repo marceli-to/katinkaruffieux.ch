@@ -7,9 +7,14 @@ tabs:
           -
             handle: agenda_date
             field:
-              time_enabled: true
               type: date
               display: Datum
+              width: 50
+          -
+            handle: agenda_time
+            field:
+              type: time
+              display: Zeit
               width: 50
           -
             handle: title
@@ -34,6 +39,11 @@ tabs:
               container: assets
               type: bard
               display: Text
+          -
+            handle: link_text
+            field:
+              type: text
+              display: 'Link Text'
           -
             handle: link
             field:

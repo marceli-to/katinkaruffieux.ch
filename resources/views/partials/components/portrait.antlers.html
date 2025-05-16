@@ -1,0 +1,15 @@
+{{ partial:layout/article }}
+  {{ if image }}
+    {{ partial:components/media/image wrapperClass="flex justify-center mb-40 md:mb-60 lg:mb-80" }}
+  {{ /if }}
+  {{ if biography && info }}
+    <div class="flex flex-col gap-y-40 md:grid md:grid-cols-6 md:gap-x-32">
+      <div class="md:col-span-3 text-left">
+        {{ biography }}
+      </div>
+      <div class="md:col-span-3 text-left">
+        {{ info }}
+      </div>
+    </div>
+  {{ /if }}
+{{ /partial:layout/article }}

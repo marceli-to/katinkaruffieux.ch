@@ -1,0 +1,22 @@
+<div class="flex flex-col gap-y-80 lg:gap-y-150">
+  {{ collection:agenda }}
+    {{ partial:layout/article class="flex flex-col items-center gap-y-10 md:gap-y-20" }}
+      <div>
+        {{ agenda_date iso_format="DD. MMM YYYY" }}{{ if agenda_time }}, {{ agenda_time iso_format="HH:mm" }} Uhr{{ /if }}
+      </div>
+      {{ partial:components/headings/h3 class="max-w-3xl text-center !mb-0" }}
+        {{ title | nl2br }}
+      {{ /partial:components/headings/h3 }}
+      <div class="text-center max-w-3xl mx-auto">
+        {{ text }}
+      </div>
+      <div class="text-center">
+        {{ if link }}
+          <a href="{{ link }}" class="inline-flex items-center gap-x-10">
+            <span>{{ link_text ?? 'Autor:in / Publikation' }} →</span>
+          </a>
+        {{ /if }}
+      </div>
+    {{ /partial:layout/article }}
+  {{ /collection:agenda }}
+</div>

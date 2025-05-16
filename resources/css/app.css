@@ -10,6 +10,11 @@ main {
   @apply flex-1;
 }
 
+main a,
+footer a {
+  @apply underline underline-offset-4 decoration-1 hover:no-underline
+}
+
 p:not(:last-child) {
   @apply mb-18;
 }

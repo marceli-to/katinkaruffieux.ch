@@ -7,19 +7,39 @@
     {{ /partial:components/headings/h2 }}
   </div>
 
-  {{ partial:layout/inner }}
 
-    {{ content }}
+  {{ content }}
 
-      {{ if type == 'contacts' }}
+    {{ if type == 'contacts' }}
+      {{ partial:layout/inner class="py-40 md:py-80 lg:py-150" }}
         {{ partial:components/contacts }}
-      {{ /if }}
+      {{ /partial:layout/inner }}
+    {{ /if }}
 
-      {{ if type == 'animation' }}
+    {{ if type == 'animation' }}
+      {{ partial:layout/inner class="py-40 md:py-80 lg:py-150" }}
         {{ partial:components/animation }}
-      {{ /if }}
-    
-    {{ /content }}
+      {{ /partial:layout/inner }}
+    {{ /if }}
 
-  {{ /partial:layout/inner }}
+    {{ if type == 'agenda' }}
+      {{ partial:layout/inner class="py-40 md:py-80 lg:py-150" }}
+        {{ partial:components/agenda }}
+      {{ /partial:layout/inner }}
+    {{ /if }}
+
+    {{ if type == 'quotes' }}
+      {{ partial:layout/inner class="py-40 md:py-80 lg:py-150" }}
+        {{ partial:components/quotes }}
+      {{ /partial:layout/inner }}
+    {{ /if }}
+
+    {{ if type == 'portrait' }}
+      {{ partial:layout/inner class="py-40 md:py-80 lg:py-150" }}
+        {{ partial:components/portrait }}
+      {{ /partial:layout/inner }}
+    {{ /if }}
+  
+  {{ /content }}
+
 </section>

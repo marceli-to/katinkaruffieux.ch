@@ -1,0 +1,16 @@
+<div class="flex flex-col gap-y-80 lg:gap-y-150">
+  {{ quote }}
+    {{ partial:layout/article class="flex flex-col items-center gap-y-10 md:gap-y-20" }}
+      {{ partial:components/headings/h3 class="max-w-4xl mx-auto text-center !mb-0" }}
+        {{ quote | nl2br }}
+      {{ /partial:components/headings/h3 }}
+      <div class="text-center">
+        {{ if link }}
+          <a href="{{ link }}" class="inline-flex items-center gap-x-10">
+            <span>{{ link_text ?? 'Autor:in / Publikation' }} →</span>
+          </a>
+        {{ /if }}
+      </div>
+    {{ /partial:layout/article }}
+  {{ /quote }}
+</div>

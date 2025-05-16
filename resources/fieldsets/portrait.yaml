@@ -1,0 +1,35 @@
+title: Portrait
+fields:
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Bild
+  -
+    handle: biography
+    field:
+      buttons:
+        - bold
+        - italic
+        - unorderedlist
+        - removeformat
+        - anchor
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      type: bard
+      display: Biographie
+  -
+    handle: info
+    field:
+      buttons:
+        - bold
+        - italic
+        - unorderedlist
+        - removeformat
+        - anchor
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      type: bard
+      display: Info

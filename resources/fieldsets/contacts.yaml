@@ -31,3 +31,4 @@ fields:
                     remove_empty_nodes: true
                     type: bard
                     display: Text
+                    toolbar_mode: floating

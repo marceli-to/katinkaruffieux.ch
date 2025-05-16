@@ -33,3 +33,17 @@ fields:
               fields:
                 -
                   import: agenda
+            quotes:
+              display: Zitate
+              instructions: 'Zitate hinzufügen'
+              icon: text-formatting-quotation
+              fields:
+                -
+                  import: quotes
+            portrait:
+              display: Portrait
+              instructions: 'Potrait hinzufügen'
+              icon: text-formatting-image-top
+              fields:
+                -
+                  import: portrait

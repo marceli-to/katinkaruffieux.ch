@@ -1,0 +1,34 @@
+title: Zitate
+fields:
+  -
+    handle: quote
+    field:
+      type: replicator
+      display: Zitat
+      sets:
+        neue_setgruppe:
+          display: 'Neue Setgruppe'
+          sets:
+            quote:
+              display: Zitat
+              instructions: 'Zitat hinzufügen'
+              icon: text-formatting-quotation
+              fields:
+                -
+                  handle: quote
+                  field:
+                    type: textarea
+                    display: Zitat
+                -
+                  handle: link_text
+                  field:
+                    type: text
+                    display: 'Link Text'
+                -
+                  handle: link
+                  field:
+                    collections:
+                      - pages
+                    container: assets
+                    type: link
+                    display: Link
