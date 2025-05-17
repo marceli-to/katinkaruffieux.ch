@@ -1,5 +1,5 @@
 
-<section class="w-full" id="{{ anchor }}">
+<section class="w-full scroll-mt-60 md:scroll-mt-80" id="{{ anchor }}">
 
   <div class="sticky top-60 md:top-80 h-40 md:h-60 flex flex-col justify-center border-b border-b-black w-full z-10 bg-pale">
     {{ partial:components/headings/h2 }}
@@ -32,6 +32,10 @@
       {{ partial:layout/inner class="py-40 md:py-80 lg:py-150" }}
         {{ partial:components/quotes }}
       {{ /partial:layout/inner }}
+    {{ /if }}
+
+    {{ if type == 'office' }}
+      {{ partial:components/office }}
     {{ /if }}
 
     {{ if type == 'portrait' }}

@@ -1,7 +1,7 @@
-<li>
+<li class="w-full">
   <a 
     href="/{{ url }}" 
-    class="{{ is_current || is_parent ? '' : '' }}"
+    class="w-full h-40 md:h-60 font-reckless-neue text-md md:text-lg flex flex-col justify-center border-b border-b-black text-center tracking-tight uppercase {{ is_current || is_parent ? '' : '' }}"
     target="{{ is_external ? '_blank' : '_self' }}"
     title="{{ title }}"
     @click="menu = false">
