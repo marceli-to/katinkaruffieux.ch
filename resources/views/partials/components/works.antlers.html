@@ -1,0 +1,33 @@
+{{ collection:works }}
+  <div class="h-40 md:h-60 flex flex-col justify-center border-b border-b-black w-full">
+    {{ partial:components/headings/h3 class="!text-md md:!text-lg !mb-0" }}
+      {{ title }}
+    {{ /partial:components/headings/h3 }}
+  </div>
+
+  {{ partial:layout/inner class="py-30 md:py-60 lg:py-90" }}
+    <div class="flex flex-col gap-y-18 md:grid md:grid-cols-6 md:gap-x-32">
+
+      {{ if text_left }}
+        <article class="md:col-span-3">
+          {{ text_left }}
+        </article>
+      {{ /if }}
+
+      {{ if text_right }}
+        <article class="md:col-span-3">
+          {{ text_right }}
+        </article>
+      {{ /if }}
+
+      {{ if link }}
+        <div class="mt-40 md:mt-60 lg:mt-80">
+          <a href="{{ link }}" class="inline-flex items-center gap-x-10">
+            <span>{{ link_text ?? 'Weitere Infos' }} →</span>
+          </a>
+        </div>
+      {{ /if }}
+
+    </div>
+  {{ /partial:layout/inner }}
+{{ /collection:works }}

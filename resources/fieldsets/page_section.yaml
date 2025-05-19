@@ -54,3 +54,10 @@ fields:
               fields:
                 -
                   import: office
+            works:
+              display: 'Bücher & Werke'
+              instructions: 'Bücher & Werke hinzufügen'
+              icon: text-formatting-image-top
+              fields:
+                -
+                  import: works

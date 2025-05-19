@@ -43,6 +43,10 @@
         {{ partial:components/portrait }}
       {{ /partial:layout/inner }}
     {{ /if }}
+
+    {{ if type == 'works' }}
+      {{ partial:components/works }}
+    {{ /if }}
   
   {{ /content }}
 

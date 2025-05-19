@@ -37,7 +37,7 @@ fields:
     handle: link_text
     field:
       type: text
-      display: 'Link Text'
+      display: Linktext
   -
     handle: link
     field:
