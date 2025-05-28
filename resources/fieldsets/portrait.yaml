@@ -1,12 +1,17 @@
 title: Portrait
 fields:
   -
-    handle: image
+    handle: media
     field:
-      max_files: 1
-      container: assets
-      type: assets
-      display: Bild
+      type: section
+      display: Medien
+  -
+    import: images
+  -
+    handle: content
+    field:
+      type: section
+      display: Inhalt
   -
     handle: biography
     field:

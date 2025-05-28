@@ -1,0 +1,59 @@
+title: Bilder
+fields:
+  -
+    handle: number_images
+    field:
+      options:
+        -
+          key: one
+          value: '1 Bild'
+        -
+          key: two
+          value: '2 Bilder'
+      default: one
+      type: select
+      display: 'Anzahl Bilder'
+  -
+    handle: single_image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Bild
+      if:
+        number_images: 'equals one'
+  -
+    handle: layout
+    field:
+      options:
+        -
+          key: portrait-landscape
+          value: Hoch-/Querformat
+        -
+          key: landscape-portrait
+          value: Quer-/Hochformat
+      default: portrait-landscape
+      type: select
+      display: Darstellung
+      if:
+        number_images: 'equals two'
+  -
+    handle: image_portrait
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Hochformat)'
+      width: 50
+      if:
+        number_images: 'equals two'
+  -
+    handle: image_landscape
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Querformat)'
+      width: 50
+      if:
+        number_images: 'equals two'
