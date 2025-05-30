@@ -47,24 +47,3 @@ fields:
               fields:
                 -
                   import: contacts
-            portrait:
-              display: Portrait
-              instructions: 'Potrait hinzufügen'
-              icon: text-formatting-image-top
-              fields:
-                -
-                  import: portrait
-            office:
-              display: Textbüro
-              instructions: 'Textbüro Inhalte hinzufügen'
-              icon: text-formatting-markdown
-              fields:
-                -
-                  import: office
-            works:
-              display: 'Bücher & Werke'
-              instructions: 'Bücher & Werke hinzufügen'
-              icon: text-formatting-image-top
-              fields:
-                -
-                  import: works
