@@ -11,9 +11,21 @@
   x-init="window.addEventListener('scroll', () => {  if (menu) {  menu = false; } });">
   <nav>
     <ul>
-      {{ nav:main }}
-        {{ partial:menu/item }}
-      {{ /nav:main }}
+      {{ page_elements }}
+        {{ if type == 'page_section' }}
+          <li class="w-full">
+            <a 
+              href="/#{{ anchor }}" 
+              class="w-full h-40 md:h-60 font-reckless-neue text-md md:text-lg flex flex-col justify-center border-b border-b-black text-center tracking-tight uppercase hover:text-white hover:bg-black transition-colors"
+              target="{{ is_external ? '_blank' : '_self' }}"
+              title="{{ title }}"
+              @click="menu = false">
+              {{ title }}
+            </a>
+          </li>
+        {{ /if }}
+      {{ /page_elements }}
+
     </ul>
   </nav>
 </div>
