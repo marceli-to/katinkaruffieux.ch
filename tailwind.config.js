@@ -33,6 +33,7 @@ export default {
       },
 
       fontSize: {
+        'xs': '1rem',       // 16px
         'sm': '1.125rem',   // 18px
         'md': '1.25rem',    // 20px
         'lg': '1.875rem',   // 30px

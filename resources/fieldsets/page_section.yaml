@@ -19,13 +19,13 @@ fields:
         neue_setgruppe:
           display: 'Neue Setgruppe'
           sets:
-            contacts:
-              display: Kontakte
-              instructions: 'Kontakte hinzufügen'
-              icon: form-address-field
+            image_text:
+              display: Bild/Text
+              instructions: 'Bild/Text hinzufügen'
+              icon: text-formatting-image-top
               fields:
                 -
-                  import: contacts
+                  import: image_text
             agenda:
               display: Agenda
               instructions: 'Agenda hinzufügen'
@@ -40,6 +40,13 @@ fields:
               fields:
                 -
                   import: quotes
+            contacts:
+              display: Kontakte
+              instructions: 'Kontakte hinzufügen'
+              icon: form-address-field
+              fields:
+                -
+                  import: contacts
             portrait:
               display: Portrait
               instructions: 'Potrait hinzufügen'
