@@ -2,7 +2,12 @@
   {{ collection:agenda }}
     {{ partial:layout/article class="flex flex-col items-center gap-y-10 md:gap-y-20" }}
       <div>
-        {{ agenda_date iso_format="DD. MMM YYYY" }}{{ if agenda_time }}, {{ agenda_time iso_format="HH:mm" }} Uhr{{ /if }}
+        {{ if agenda_date }}
+          {{ agenda_date iso_format="DD. MMMM YYYY" }}{{ if agenda_time }}, {{ agenda_time iso_format="HH:mm" }} Uhr{{ /if }}
+        {{ /if }}
+        {{ if agenda_date_multiple }}
+          {{ agenda_date_multiple | nl2br }}
+        {{ /if }}
       </div>
       {{ partial:components/headings/h3 class="max-w-3xl text-center !mb-0" }}
         {{ title | nl2br }}

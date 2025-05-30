@@ -5,17 +5,33 @@ tabs:
       -
         fields:
           -
+            handle: multiple_dates
+            field:
+              type: toggle
+              display: 'Mehrtägig?'
+          -
             handle: agenda_date
             field:
               type: date
               display: Datum
               width: 50
+              unless:
+                multiple_dates: 'equals true'
           -
             handle: agenda_time
             field:
               type: time
               display: Zeit
               width: 50
+              unless:
+                multiple_dates: 'equals true'
+          -
+            handle: agenda_date_multiple
+            field:
+              type: textarea
+              display: Datum/Zeit
+              if:
+                multiple_dates: 'equals true'
           -
             handle: title
             field:

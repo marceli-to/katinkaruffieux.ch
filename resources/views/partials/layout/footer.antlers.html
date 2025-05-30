@@ -1,36 +1,19 @@
 <footer class="border-t border-t-black">
   {{ partial:layout/inner class="py-25 lg:py-30" }}
   <div class="lg:grid lg:grid-cols-6">
-    <p class="lg:col-span-2">
-      Katinka Ruffieux<br>
-      <a 
-        href="mailto:kontakt@katinka.ruffieux.ch">
-        kontakt@katinka.ruffieux.ch
-      </a>
-    </p>
-    <p class="lg:col-span-2">
-      Fotografie: 
-      <a 
-        href="https://google.com" 
-        title="Fotografie: XXX XXXX">
-        XXX XXXX
-      </a><br>
-      Design: 
-      <a 
-        href="https://google.com" 
-        title="Design: Emma Leuthold">
-        Emma Leuthold
-      </a><br>
-      Code: 
-      <a 
-        href="https://marceli.to" 
-        title="Code: marceli.to">
-        Marcel Stadelmann
-      </a>
-    </p>
-    <p class="lg:col-span-2">
-      © 2025 Katinka Ruffieux
-    </p>
+    {{ if footer:contact_information }}
+      <div class="lg:col-span-2">
+        {{ footer:contact_information }}
+      </div>
+    {{ /if }}
+    {{ if footer:imprint }}
+      <div class="lg:col-span-2">
+        {{ footer:imprint }}
+      </div>
+    {{ /if }}
+    <div class="lg:col-span-2">
+      © {{ now iso_format="YYYY" }} Katinka Ruffieux
+    </div>
   </div>
   {{ /partial:layout/inner }}
 </footer>
