@@ -7,8 +7,11 @@
     {{ /partial:components/headings/h2 }}
   </div>
 
-
   {{ content }}
+
+    {{ if type == 'image_text' }}
+      {{ partial:components/image_text }}
+    {{ /if }}
 
     {{ if type == 'contacts' }}
       {{ partial:layout/inner class="py-40 md:py-80 lg:py-150" }}
@@ -32,24 +35,6 @@
       {{ partial:layout/inner class="py-40 md:py-80 lg:py-150" }}
         {{ partial:components/quotes }}
       {{ /partial:layout/inner }}
-    {{ /if }}
-
-    {{ if type == 'office' }}
-      {{ partial:components/office }}
-    {{ /if }}
-
-    {{ if type == 'portrait' }}
-      {{ partial:layout/inner class="py-40 md:py-80 lg:py-150" }}
-        {{ partial:components/portrait }}
-      {{ /partial:layout/inner }}
-    {{ /if }}
-
-    {{ if type == 'works' }}
-      {{ partial:components/works }}
-    {{ /if }}
-
-    {{ if type == 'image_text' }}
-      {{ partial:components/image_text }}
     {{ /if }}
   
   {{ /content }}
