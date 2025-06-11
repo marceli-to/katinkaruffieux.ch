@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-2c43d0b0.css",
+    "file": "assets/app-49c38a6b.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -39,7 +39,7 @@
     "src": "resources/js/lottie-interactivity.js"
   },
   "resources/js/lottie-player.js": {
-    "file": "assets/lottie-player-53fc278c.js",
+    "file": "assets/lottie-player-240e2680.js",
     "isEntry": true,
     "src": "resources/js/lottie-player.js"
   }
