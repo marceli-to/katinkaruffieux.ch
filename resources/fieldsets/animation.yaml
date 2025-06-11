@@ -1,7 +1,10 @@
 title: Animation
 fields:
   -
-    handle: code
+    handle: animation_json
     field:
-      type: textarea
-      display: Code
+      max_files: 1
+      container: assets
+      type: assets
+      display: Datei
+      folder: animationen
