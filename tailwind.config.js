@@ -38,7 +38,7 @@ export default {
         'md': '1.25rem',    // 20px
         'lg': '1.875rem',   // 30px
         'xl': '2.8125rem',  // 45px
-        '2xl': '3.75rem',   // 60px
+        '2xl': '3.438rem',  // 55px
       },
       
       zIndex: {

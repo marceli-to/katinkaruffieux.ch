@@ -6,7 +6,7 @@
       {{ /partial:components/headings/h3 }}
       <div class="text-center">
         {{ if link }}
-          <a href="{{ link }}" class="inline-flex items-center gap-x-10">
+          <a href="{{ link }}" {{ if link | is_external_url }} target="_blank" {{ /if }} class="inline-flex items-center gap-x-10">
             <span>{{ link_text ?? 'Autor:in / Publikation' }} →</span>
           </a>
         {{ /if }}

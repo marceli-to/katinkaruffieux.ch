@@ -1,10 +1,13 @@
-<lottie-player
-	id="lottieMeer"
-	src="{{ animation_json }}"
-	speed="1"
-  autoplay
-  loop>
-</lottie-player>
+{{ partial:layout/inner class="pb-30 md:pb-60 lg:pb-90" }}
+  <lottie-player
+    id="lottieMeer"
+    src="{{ animation_json }}"
+    speed="1"
+    autoplay
+    loop>
+  </lottie-player>
+{{ /partial:layout/inner }}
+
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
