@@ -7,10 +7,12 @@
 	height="250">
 </lottie-player>
 <script>
-LottieInteractivity.create({
-  mode: 'scroll',
-  player: '#lottieheader__mobile--angebot',
-  actions: [{ visibility: [0, 1.0], type: 'play'}],
+document.addEventListener("DOMContentLoaded", function () {
+  LottieInteractivity.create({
+    mode: 'scroll',
+    player: '#lottieheader__mobile--angebot',
+    actions: [{ visibility: [0, 1.0], type: 'play'}],
+  });
 });
 </script>
 
