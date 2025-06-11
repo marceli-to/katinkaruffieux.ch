@@ -1,45 +1,30 @@
 <lottie-player
-	id="lottieheader__mobile--angebot"
-	src="/assets/animationen/test.json"
-	class="lottie-heading"
+	id="lottieMeer"
+	src="{{ animation_json }}"
 	speed="1"
-	width="1920"
-	height="250">
+  autoplay
+  loop>
 </lottie-player>
-<script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
+{{# <script>
 document.addEventListener("DOMContentLoaded", function () {
   LottieInteractivity.create({
+    player: '#lottieMeer',
     mode: 'scroll',
-    player: '#lottieheader__mobile--angebot',
-    actions: [{ visibility: [0, 1.0], type: 'play'}],
+    actions: [
+      {
+        visibility: [0, 0.5],
+        type: 'play',
+        frames: [0, 60]
+      },
+      {
+        visibility: [0.5, 0],
+        type: 'play',
+        frames: [61, 120]
+      }
+    ]
   });
 });
-</script>
-
-
-{{# <div class="py-20 md:py-40 lg:py-60 w-full h-[calc(100dvh_-_60px)] md:h-[calc(100vh_-_80px)]">
-  <lottie-player
-    id="lottiePlayer"
-    class="w-full"
-    autoplay
-    loop
-    src="{{ animation_json }}">
-  </lottie-player>
-</div>
-
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> #}}
-{{# <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    LottieInteractivity.create({
-      player: "#lottiePlayer",
-      actions: [
-        {
-          visibility: [0,1],
-          type: 'seek',
-          frames: [0, 120],
-        },
-      ]
-    });
-  });
 </script> #}}
