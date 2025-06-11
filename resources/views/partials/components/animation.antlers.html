@@ -1,33 +1,30 @@
-{{ partial:layout/inner class="pb-30 md:pb-60 lg:pb-90" }}
+{{ partial:layout/inner class="pb-30 md:pb-60 lg:pb-90 lottiContainer" }}
   <lottie-player
     id="lottieMeer"
     src="{{ animation_json }}"
-    speed="1"
     autoplay
     loop>
   </lottie-player>
+  {{# 
+  should run on scroll
+  <lottie-player
+    id="lottieMeer"
+    src="{{ animation_json }}">
+  </lottie-player> #}}
+
 {{ /partial:layout/inner }}
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-
 {{# <script>
-document.addEventListener("DOMContentLoaded", function () {
   LottieInteractivity.create({
-    player: '#lottieMeer',
-    mode: 'scroll',
+    player: "#lottieMeer",
+    mode: "scroll",
     actions: [
       {
-        visibility: [0, 0.5],
-        type: 'play',
-        frames: [0, 60]
-      },
-      {
-        visibility: [0.5, 0],
-        type: 'play',
-        frames: [61, 120]
+        visibility: [0.25, 1.0],
+        type: "play"
       }
     ]
   });
-});
 </script> #}}
