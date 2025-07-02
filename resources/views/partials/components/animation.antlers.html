@@ -1,10 +1,10 @@
-{{ partial:layout/inner class="pb-30 md:pb-60 lg:pb-90 lottiContainer" }}
+{{ partial:layout/inner class="pb-30 md:pb-60 lg:pb-90 lottiContainer-{{ id }}" }}
+
   <lottie-player
-    id="lottieMeer"
-    src="{{ animation_json }}"
-    autoplay
-    loop>
+    id="{{ id }}"
+    src="{{ animation_json }}">
   </lottie-player>
+  
   {{# 
   should run on scroll
   <lottie-player
@@ -14,17 +14,30 @@
 
 {{ /partial:layout/inner }}
 
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-{{# <script>
-  LottieInteractivity.create({
-    player: "#lottieMeer",
-    mode: "scroll",
-    actions: [
-      {
-        visibility: [0.25, 1.0],
-        type: "play"
-      }
-    ]
+{{# <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> #}}
+{{# <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>#}}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    LottieInteractivity.create({
+      player: "#{{id}}",
+      mode: "scroll",
+      actions: [
+        {
+          visibility: [0, 0.25], // erstes Drittel beim Scrollen
+          type: 'seek',
+          frames: [0, 26] // Texte fliegen rein
+        },
+        {
+          visibility: [0.25, 0.5], // bleibt stehen
+          type: 'stop',
+          frames: [35] // z. B. Frame in der Mitte des „Pause-Zustands“
+        },
+        {
+          visibility: [0.5, 1],
+          type: 'seek',
+          frames: [96, 120] // Texte fliegen raus
+        }
+      ]
+    });
   });
-</script> #}}
+</script>
