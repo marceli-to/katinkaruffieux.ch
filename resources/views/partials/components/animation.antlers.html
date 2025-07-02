@@ -4,18 +4,10 @@
     id="{{ id }}"
     src="{{ animation_json }}">
   </lottie-player>
-  
-  {{# 
-  should run on scroll
-  <lottie-player
-    id="lottieMeer"
-    src="{{ animation_json }}">
-  </lottie-player> #}}
+
 
 {{ /partial:layout/inner }}
 
-{{# <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> #}}
-{{# <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>#}}
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     LottieInteractivity.create({
