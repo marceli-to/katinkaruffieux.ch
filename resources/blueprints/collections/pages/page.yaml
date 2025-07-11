@@ -36,13 +36,14 @@ tabs:
                           import: page_section
                     animation_scroll:
                       display: 'Animation (Scroll)'
-                      instructions: 'Animation hinzufügen'
+                      instructions: 'Animation mit Scroll-Effekt hinzufügen'
                       icon: programming-script-code-brackets
                       fields:
                         -
                           import: animation_scroll
                     animation_autoplay:
                       display: 'Animation (Autoplay)'
+                      instructions: 'Animation mit Autoplay hinzufügen'
                       icon: programming-script-code-brackets
                       fields:
                         -
