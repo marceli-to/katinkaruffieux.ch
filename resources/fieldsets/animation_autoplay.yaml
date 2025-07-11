@@ -1,0 +1,16 @@
+title: 'Animation (Autoplay)'
+fields:
+  -
+    handle: animations
+    field:
+      type: grid
+      display: Animationen
+      fields:
+        -
+          handle: animation
+          field:
+            max_files: 1
+            container: assets
+            type: assets
+            display: Animation
+            folder: animationen

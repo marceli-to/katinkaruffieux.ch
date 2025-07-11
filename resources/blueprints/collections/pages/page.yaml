@@ -34,13 +34,19 @@ tabs:
                       fields:
                         -
                           import: page_section
-                    animation:
-                      display: Animation
+                    animation_scroll:
+                      display: 'Animation (Scroll)'
                       instructions: 'Animation hinzufügen'
                       icon: programming-script-code-brackets
                       fields:
                         -
-                          import: animation
+                          import: animation_scroll
+                    animation_autoplay:
+                      display: 'Animation (Autoplay)'
+                      icon: programming-script-code-brackets
+                      fields:
+                        -
+                          import: animation_autoplay
                     contacts:
                       display: Kontakte
                       icon: form-address-field

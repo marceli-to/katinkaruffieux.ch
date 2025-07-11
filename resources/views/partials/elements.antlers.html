@@ -6,6 +6,10 @@
   {{ partial:components/section }}
 {{ /if }}
 
-{{ if type == 'animation' }}
-  {{ partial:components/animation }}
+{{ if type == 'animation_scroll' }}
+  {{ partial:components/animation_scroll }}
+{{ /if }}
+
+{{ if type == 'animation_autoplay' }}
+  {{ partial:components/animation_autoplay }}
 {{ /if }}

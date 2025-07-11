@@ -1,0 +1,9 @@
+{{ partial:layout/inner class="pb-30 md:pb-60 lg:pb-90" }}
+  {{ random_animation = animations | shuffle | first }}
+  <lottie-player
+    id="{{ id }}"
+    src="{{ random_animation:animation:url }}"
+    autoplay
+    loop>
+  </lottie-player>
+{{ /partial:layout/inner }}
