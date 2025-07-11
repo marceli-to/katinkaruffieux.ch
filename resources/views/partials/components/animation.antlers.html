@@ -13,7 +13,7 @@
       container: "lottiContainer-{{ id }}",
       actions: [
         {
-          visibility: [0.1, 0.5], // erstes Drittel beim Scrollen
+          visibility: [0, 0.5], // erstes Drittel beim Scrollen
           type: 'seek',
           frames: [120, 96] // Texte fliegen rein
         },
@@ -23,7 +23,7 @@
           frames: [96, 26] // z. B. Frame in der Mitte des „Pause-Zustands“
         },
         {
-          visibility: [0.5, 0.9],
+          visibility: [0.5, 1],
           type: 'seek',
           frames: [96, 120] // Texte fliegen raus
         }
