@@ -9,7 +9,10 @@
         {{ /animation_files }}
       ];
       const player = document.getElementById('randomLottie-{{ id }}');
-      initRandomAnimationPlayer(player, animationFiles);
+      const animationController = initRandomAnimationPlayer(player, animationFiles);
+      
+      // Store controller globally for external access (optional)
+      window.animationController_{{ id }} = animationController;
     });
   </script>
 </div>
