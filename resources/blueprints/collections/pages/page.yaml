@@ -34,16 +34,9 @@ tabs:
                       fields:
                         -
                           import: page_section
-                    animation_scroll:
-                      display: 'Animation (Scroll)'
-                      instructions: 'Animation mit Scroll-Effekt hinzufügen'
-                      icon: programming-script-code-brackets
-                      fields:
-                        -
-                          import: animation_scroll
                     animation_autoplay:
-                      display: 'Animation (Autoplay)'
-                      instructions: 'Animation mit Autoplay hinzufügen'
+                      display: Animationen
+                      instructions: 'Animationen hinzufügen'
                       icon: programming-script-code-brackets
                       fields:
                         -

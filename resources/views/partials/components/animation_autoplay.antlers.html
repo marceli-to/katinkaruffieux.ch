@@ -1,9 +1,16 @@
-{{ partial:layout/inner class="pb-30 md:pb-60 lg:pb-90" }}
-  {{ random_animation = animations | shuffle | first }}
-  <lottie-player
-    id="{{ id }}"
-    src="{{ random_animation:animation:url }}"
-    autoplay
-    loop>
-  </lottie-player>
+{{ partial:layout/inner class="pb-30 md:pb-60 lg:pb-90 first:pt-15 md:first:pt-30 lg:first:pt-45" }}
+<div class="lottiePlayerContainer">
+  <lottie-player id="randomLottie-{{ id }}" autoplay></lottie-player>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const animationFiles = [
+        {{ animation_files }}
+          '{{ value }}',
+        {{ /animation_files }}
+      ];
+      const player = document.getElementById('randomLottie-{{ id }}');
+      initRandomAnimationPlayer(player, animationFiles);
+    });
+  </script>
+</div>
 {{ /partial:layout/inner }}
